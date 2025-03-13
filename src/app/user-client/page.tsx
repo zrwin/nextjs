@@ -44,7 +44,8 @@ export default function UserClient(){
        <span className='hover:to-blue-300'><a className="text-inherit no-underline hover:no-underline focus:no-underline" href="https://jsonplaceholder.typicode.com/users">jsonplaceholder.typicode.com/users</a></span>
             </code>
             </h1>
-            <table>
+            {loading}? <h1>Couldn't fetch data</h1>
+            :<table>
             <thead>
           <tr className="bg-gray-800 text-white">
             <th className="border border-gray-400 p-2">Name</th>

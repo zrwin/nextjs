@@ -1,7 +1,9 @@
 'use client'
 import { useRouter } from "next/navigation"
-export default async function ShowName({params}: {params : {name:string}}){
-    const {name} = params
+import { useParams } from "next/navigation"
+
+export default function ShowName(){
+    const {name} = useParams()
     const {push} = useRouter()
     const handleClick = ()=>{
         push(`/`)

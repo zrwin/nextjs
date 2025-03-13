@@ -1,10 +1,11 @@
 "use client"
-import { useState } from "react"
+import { FormEvent, useState } from "react"
 import { useRouter } from "next/navigation"
+
 export default function Form(){
     const [inputVal, setInputVal] = useState("")
     const {push} = useRouter()
-    const handleSubmit =(e : any)=>{
+    const handleSubmit =(e : FormEvent<HTMLFormElement>)=>{
         e.preventDefault()
         push(`/data/${inputVal}`)
     }
