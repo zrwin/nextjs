@@ -15,7 +15,7 @@ export default function UserClient(){
         async function fetchUsers(){
 
             try{
-                const response = await fetch('https://jsonplaceholder.typicode.com/users')
+                const response = await fetch("https://jsonplaceholder.typicode.com/users")
                 if(!response.ok) throw new Error("faileeed to fetch user")
                 const data = await response.json()
                 setUser(data)
@@ -44,7 +44,7 @@ export default function UserClient(){
        <span className='hover:to-blue-300'><a className="text-inherit no-underline hover:no-underline focus:no-underline" href="https://jsonplaceholder.typicode.com/users">jsonplaceholder.typicode.com/users</a></span>
             </code>
             </h1>
-            {loading}? <h1>Couldn't fetch data</h1>
+            {loading}? <h1>Couldn&apos;t fetch data</h1>
             :<table>
             <thead>
           <tr className="bg-gray-800 text-white">

@@ -8,7 +8,7 @@ const About = () => {
           About Me
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed">
-          Hello! I'm a passionate developer who loves creating modern, user-friendly web applications. My goal is to build seamless digital experiences using cutting-edge technologies.
+          Hello! I am a passionate developer who loves creating modern, user-friendly web applications. My goal is to build seamless digital experiences using cutting-edge technologies.
         </p>
         <div className="mt-8 flex justify-center space-x-4">
           <a
